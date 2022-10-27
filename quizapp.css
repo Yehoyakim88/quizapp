@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-image: url('./img/bg1.jpeg');
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.btn {
+    width: fit-content;
+}
+
+.hoveringcard:hover {
+    cursor: pointer;
+    background-color: #0C6EFD !important;
+    color: white !important;
+}
+
+.quizCard {
+    width: 30rem;
+    background-color: #08D0C1;
+}
+
+.cardImage {
+    align-self: center;
+    width: 445px; 
+    height: 200px; 
+    object-fit: contain; 
+    margin: 15px;
+}
+
+.alertContainer {
+    position: absolute;
+    z-index: 4 !important;
+    top: 180px;
+    left: 400px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.alertImage {
+    width: 400px;
+    height: fit-content;
+    object-fit: cover;
+    transform: scaleY(-1);
+}
+
+.alertText {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 5;
+    transform: scaleY(1);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.greenText {
+    color: green
+}
+
+.redText {
+    color: red;
+}
+
+.textTopCenter {
+    position: absolute;
+    top: 100px;
+    align-self: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
+
+.questionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid #D2D2D2;
+}
+
+.endScreen {
+    justify-content: center;
+    align-items: center;
+}
+
+.endScreen h1 {
+    color: red;
+}
+
+.finishContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finishImage {
+    width: 90vw;
+    height: 90vh;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-style: italic;
+  }
+
+  @media(max-width: 600px) {
+
+    .alertContainer {
+        left: 0px !important;
+    }
+
+    .alertText {
+        left: 40px !important;
+    }
+
+    .cardImage {
+        height: 150px !important;
+        margin: 10px !important;
+    }
+
+    .card-body {
+        height: 2.5rem;
+        font-size: 0.65rem;
+    }
+
+    .quizCard {
+        height: 540px !important;
+    }
+
+    .questionFooter {
+        padding-top: 10px !important;
+    }
+
+    .questionFooter span {
+        font-size: 12px !important;
+    }
+
+    .btn {
+        height: 28px !important;
+        width: 100px !important;
+        font-size: 10px !important;
+    }
+  }
